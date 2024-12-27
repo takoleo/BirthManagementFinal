@@ -1,9 +1,10 @@
+import {Outlet} from "react-router-dom";
 
 function App() {
 
   return (
-    <main>
-       <h1 className="text-3xl font-bold underline">Birth management</h1>
+    <main className="bg-blue-200 min-h-screen">
+        <Outlet />
     </main>
   )
 }
