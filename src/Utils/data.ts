@@ -4,7 +4,7 @@
              label: 'The declarations.'
          },
          {
-             to:'/private/request',
+             to:'request',
              label: 'The request.'
          },
          {

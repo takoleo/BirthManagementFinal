@@ -11,10 +11,10 @@ function Home() {
                    Declaration
                </Link>
 
-               <Link to={`/request`}
+               {/*<Link to={`/private/request`}
                      className="border border-red-400 text-black-600 px-6 py-4 rounded-md hover:bg-red-400 hover:text-white">
                    Request
-               </Link>
+               </Link>*/}
            </article>
 
         </section>

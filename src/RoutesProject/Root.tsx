@@ -17,11 +17,6 @@ const router = createBrowserRouter([
                         element: <Home />,
                     },
                     {
-                        path: "request",
-                        element: <Resquest />,
-                    },
-
-                    {
                         path: "private",
                         element: <PrivateLayout />,
                             children:
@@ -29,6 +24,10 @@ const router = createBrowserRouter([
                                     {
                                         path: "declaration",
                                         element: <Declarations />,
+                                    },
+                                    {
+                                        path: "request",
+                                        element: <Resquest />,
                                     },
                                 ],
                     },
