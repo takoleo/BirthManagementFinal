@@ -4,6 +4,7 @@ import ErrorPage from "../error-page.tsx";
 import PrivateLayout from "../Layouts/PrivateLayout.tsx";
 import Declarations from "../pages/Declarations.tsx";
 import Home from "../pages/Home.tsx";
+import Resquest from "../pages/Resquest.tsx";
 
 const router = createBrowserRouter([
     {
@@ -11,22 +12,27 @@ const router = createBrowserRouter([
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
-                {
-                    index:true,
-                    element: <Home />,
-                },
-                {
-                    path: "private",
-                    element: <PrivateLayout />,
+                    {
+                        index:true,
+                        element: <Home />,
+                    },
+                    {
+                        path: "request",
+                        element: <Resquest />,
+                    },
 
-                    children: [
-                        {
-                            path: "declaration",
-                            element: <Declarations />,
-                        },
-                    ],
-            },
-        ],
+                    {
+                        path: "private",
+                        element: <PrivateLayout />,
+                            children:
+                                [
+                                    {
+                                        path: "declaration",
+                                        element: <Declarations />,
+                                    },
+                                ],
+                    },
+                 ],
     },
 ]);
 
